@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>浪漫表白</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            text-align: center;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #ff69b4;
+        }
+
+        button {
+            background-color: #ff69b4;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #ff1493;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>我有话想对你说</h1>
+        <button onclick="askQuestion()">点击开启惊喜</button>
+    </div>
+
+    <script>
+        function askQuestion() {
+            var answer = confirm("谢瑶，你可以做我的恋人吗？");
+            if (answer) {
+                alert("太开心啦，你就是我这辈子最想守护的人！");
+            } else {
+                alert("没关系，我会一直等你，直到你愿意为止。");
+            }
+        }
+    </script>
+</body>
+
+</html>
